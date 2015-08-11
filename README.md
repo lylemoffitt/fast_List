@@ -4,7 +4,7 @@
 
 Motivation
 ----
-This class was created as a part of my Sr. Design project. I needed to be able to organize arbitrarily sized data in a uniform fashion, but couldn't afford the processing overhead (or memory requirements) of heap allocation. This class implements a quick 'n dirty (i.e. *simple*) version of the `STL::deque`. Instead of allocating memory on the heap, this class is designed to allocate on the stack. This alteration means that memory can be allocated at the initialization phase of my run-time operations, and never dealt with again. Using stack-based allocation also gives me constant run-time complexity for a number of algorithmic operations; that is what is most important.
+This class was created as a part of my arduino-based Sr. Design project. I needed to be able to organize arbitrarily sized data in a uniform fashion, but couldn't afford the processing overhead (or memory requirements) of heap allocation. This class implements a quick 'n dirty (i.e. *simple*) version of the `STL::deque`. Instead of allocating memory on the heap, this class is designed to allocate on the stack. This alteration means that memory can be allocated at the initialization phase of my run-time operations, and never dealt with again. Using stack-based allocation also gives me constant run-time complexity for a number of algorithmic operations; that is what is most important.
 
 Design
 ---
@@ -13,3 +13,7 @@ The class is designed to function just like a `STL::deque`. It has all the obvio
 Documentation
 ---
 All methods and classes are documented doxy-style. For further information check out [doxygen](www.doxygen.org).
+
+See Also
+---
+For a more C-style, more function oriented version of this list checkout this  [gist](gist.github.com/lylemoffitt/d70cc5e6ad78ed622061). It's the all-portpose data structure.
